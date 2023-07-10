@@ -1,7 +1,7 @@
 {
-  "name": "eduocean",
+  "name": "web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/eduocean",
+  "sourceRoot": "apps/web",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,11 +9,11 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/eduocean"
+        "outputPath": "dist/apps/web"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/eduocean"
+          "outputPath": "apps/web"
         },
         "production": {}
       }
@@ -22,16 +22,16 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "eduocean:build",
+        "buildTarget": "web:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "eduocean:build:development",
+          "buildTarget": "web:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "eduocean:build:production",
+          "buildTarget": "web:build:production",
           "dev": false
         }
       }
@@ -39,14 +39,14 @@
     "export": {
       "executor": "@nx/next:export",
       "options": {
-        "buildTarget": "eduocean:build:production"
+        "buildTarget": "web:build:production"
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/eduocean/jest.config.ts",
+        "jestConfig": "apps/web/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -60,7 +60,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/eduocean/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/web/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
