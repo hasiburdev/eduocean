@@ -16,7 +16,7 @@ export default async function Index() {
   console.log(data);
 
   return (
-    <div className="text-center text-4xl text-cyan-500">
+    <div className="mr-4 text-center text-4xl text-cyan-500 opacity-50">
       <h1>Learn from the vast ocean of knowledge!</h1>
 
       <p>{JSON.stringify(data ?? '')}</p>
