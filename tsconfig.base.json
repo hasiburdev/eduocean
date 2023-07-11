@@ -19,7 +19,8 @@
       "@eduocean/types": ["libs/types/src/index.ts"],
       "@eduocean/ui/shared": ["libs/ui/shared/src/index.ts"],
       "@eduocean/users": ["libs/users/src/index.ts"],
-      "@eduocean/utils": ["libs/utils/src/index.ts"]
+      "@eduocean/utils": ["libs/utils/src/index.ts"],
+      "@eduocean/validators": ["libs/validators/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
