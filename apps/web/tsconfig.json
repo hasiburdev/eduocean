@@ -29,7 +29,8 @@
     "../../apps/eduocean/.next/types/**/*.ts",
     "../../dist/apps/eduocean/.next/types/**/*.ts",
     "next-env.d.ts",
-    "../../apps/web/.next/types/**/*.ts"
+    "../../apps/web/.next/types/**/*.ts",
+    "../../dist/apps/web/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
